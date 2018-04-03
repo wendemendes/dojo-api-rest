@@ -1,0 +1,3 @@
+server:
+  context-path: /dojo-rest
+  port: 8088

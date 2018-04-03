@@ -1,0 +1,1 @@
+insert into pedido (pedido_key, observacao, data_criacao) values (1, 'Pedido de teste dojo', current_date);
