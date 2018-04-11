@@ -9,14 +9,17 @@ import javax.persistence.Id;
 import com.dojo.rest.pedido.web.form.PedidoForm;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@NoArgsConstructor
 public class Pedido {
 	
 	public Pedido(PedidoForm form) {
 		this.lojaKey = form.getLojaKey();
 		this.observacao = form.getObservacao();
+		this.dataCriacao = new Date();
 	}
 
 	@Id 
